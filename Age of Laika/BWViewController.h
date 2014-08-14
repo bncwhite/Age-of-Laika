@@ -10,4 +10,12 @@
 
 @interface BWViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *ageLabel;
+@property (weak, nonatomic) IBOutlet UILabel *realAgeLabel;
+
+@property (weak, nonatomic) IBOutlet UITextField *ageInput;
+
+- (IBAction)calculateDogAge:(id)sender;
+- (IBAction)convertToRealYears:(id)sender;
+
 @end
